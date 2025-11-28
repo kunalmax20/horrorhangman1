@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horror Hangman</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="bgMusic" src="assets/music.mp3" loop></audio>
+
+  <div id="static"></div>
+  <div id="flash"></div>
+
+  <div id="menu">
+    <h1 class="title">☠️ HORROR HANGMAN ☠️</h1>
+    <button id="playBtn" class="btn blood-btn">PLAY</button>
+  </div>
+
+  <div id="game" class="hidden">
+    <h2 id="levelText" class="pulse"></h2>
+    <p id="word"></p>
+    <div id="letters"></div>
+    <p id="lives"></p>
+    <button id="retryBtn" class="btn hidden blood-btn">RETRY</button>
+  </div>
+
+  <img id="jumpscare" class="hidden" />
+  <audio id="jumpscareSound"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
